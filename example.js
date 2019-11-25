@@ -9,6 +9,7 @@ import { createStore, combineReducers, applyMiddleware, compose } from 'redux'
 import { Provider } from 'react-redux'
 import thunk from 'redux-thunk'
 import createLogger from 'redux-logger'
+import { composeWithDevTools } from 'redux-devtools-extension';
 
 // import Bootstrap Grid components for layout
 import { Navbar, Grid, Row, Col } from 'react-bootstrap'
@@ -54,12 +55,21 @@ if (process.env.NODE_ENV === 'development') {
 }
 
 // set up the Redux store
+// const store = createStore(
+//   combineReducers({
+//     otp: createOtpReducer(otpConfig),
+//     router: connectRouter(history)
+//   }),
+//   compose(applyMiddleware(...middleware))
+// )
 const store = createStore(
   combineReducers({
     otp: createOtpReducer(otpConfig),
     router: connectRouter(history)
   }),
-  compose(applyMiddleware(...middleware))
+  composeWithDevTools(
+    compose(applyMiddleware(...middleware))
+  )
 )
 
 // define a simple responsive UI using Bootstrap and OTP-RR
