@@ -16,4 +16,4 @@ coverage
 dist
 
 # secrets
-config.yml
+# config.yml
