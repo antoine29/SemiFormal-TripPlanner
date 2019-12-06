@@ -56,3 +56,5 @@ This SemiFormal-TripPlanner is compositen by three parts:
     ```
     After of this the front-end application should be running at `localhost:9966`
 
+[*slides?](https://antoine29.github.io/SemiFormal-TripPlanner/index.html)
+
