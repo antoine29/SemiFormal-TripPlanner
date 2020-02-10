@@ -1,27 +1,9 @@
 api:
-  host: http://localhost
+  # host: http://localhost
+  host: http://tp_otp_cont
   path: /otp/routers/default
   port: 8080
-# Add suggested locations to be shown as options in the form view.
-# locations:
-#   - id: 'airport'
-#     icon: 'plane'
-#     name: 'Portland International Airport (PDX)'
-#     lat: 45.587579
-#     lon: -122.593084
-#   - id: 'zoo'
-#     icon: building
-#     lat: 45.51010444232195
-#     lon: -122.71607145667079
-#     name: Oregon Zoo, Portland, OR
 
-### The persistence setting is used to enable the storage of places (home, work),
-### recent searches/places, user overrides, and favorite stops. Currently the
-### only strategy is localStorage (which is used by default). It also must be
-### enabled to show the stored locations (see above).
-### TODO: add another server-based strategy
-# initLat: -16.50251
-# initLon: -68.13223
 persistence:
   enabled: true
   strategy: localStorage
@@ -29,8 +11,6 @@ persistence:
 map:
   initLat: -16.50251
   initLon: -68.13223
-  # initLat: 45.52
-  # initLon: -122.682
   baseLayers:
     - name: Streets
       url: //cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}@2x.png
@@ -69,25 +49,6 @@ geocoder:
   # This base URL is required as the libraries will default to using now-defunct
   # mapzen urls
   baseUrl: https://geocoder.example.com/pelias/v1
-
-# example config for an ArcGIS geocoder
-# (https://developers.arcgis.com/rest/geocode/api-reference/overview-world-geocoding-service.htm)
-# WARNING: using the ArcGIS geocoder with a persistence strategy of
-#   `localStorage` will result in an error being thrown because ArcGIS
-#   requires the use of a paid account to store geocode results.
-#   See https://developers.arcgis.com/rest/geocode/api-reference/geocoding-free-vs-paid.htm
-# geocoder:
-#   boundary:
-#     rect:
-#       minLon: -123.2034
-#       maxLon: -122.135
-#       minLat: 45.273
-#       maxLat: 45.7445
-#   focusPoint:
-#     lat: 45.5223452
-#     lon: -122.6821804
-#   # required geocoder type.
-#   type: ARCGIS
 
 # Use this mode config for the enhanced Transit+ config
 modes:
