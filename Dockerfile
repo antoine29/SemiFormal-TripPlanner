@@ -11,6 +11,6 @@ RUN apk add git && \
     cd SemiFormal-TripPlanner && git checkout LPZTripPlanner && \
     yarn
 
-COPY ./*.conf .
+WORKDIR /app/SemiFormal-TripPlanner
 
 EXPOSE 9066
