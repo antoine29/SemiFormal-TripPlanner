@@ -1,14 +1,13 @@
 FROM node:lts-alpine3.10
 
-COPY ./* /SemiFormal-TripPlanner/
+WORKDIR /Semiformal-TripPlanner
 
-RUN cd SemiFormal-TripPlanner && \
-    yarn && \
+COPY . .
+
+RUN yarn && \
     yarn buildProd && \
     cp example.css dist
 
-ENTRYPOINT ["node server.js"]
-
-WORKDIR /SemiFormal-TripPlanner
+ENTRYPOINT ["node", "server.js"]
 
 EXPOSE 8080
