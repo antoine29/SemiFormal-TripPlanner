@@ -22,3 +22,11 @@ yarn start
 ## Library Documentation
 
 Coming Soon
+
+## Docker build
+First set the 'config.yml' file with the accurate ip for the backend OTP service
+
+```bash
+$ docker build -t ui .
+$ docker run --name uiCont --rm -d -p 8080:8080 ui
+```
