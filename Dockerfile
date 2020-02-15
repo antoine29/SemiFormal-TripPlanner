@@ -1,11 +1,14 @@
 FROM node:lts-alpine3.10
 
-RUN apk add git && \
-    mkdir app && cd app && \
-    git clone https://github.com/antoine29/SemiFormal-TripPlanner.git && \
-    cd SemiFormal-TripPlanner && git checkout LPZTripPlanner && \
-    yarn
+COPY ./* /SemiFormal-TripPlanner/
 
-WORKDIR /app/SemiFormal-TripPlanner
+RUN cd SemiFormal-TripPlanner && \
+    yarn && \
+    yarn buildProd && \
+    cp example.css dist
 
-EXPOSE 9066
+ENTRYPOINT ["node server.js"]
+
+WORKDIR /SemiFormal-TripPlanner
+
+EXPOSE 8080

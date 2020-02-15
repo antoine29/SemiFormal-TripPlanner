@@ -12,7 +12,7 @@
     "prestart": "yarn",
     "test": "yarn run lint && yarn run lint-docs && yarn run jest",
     "start": "mastarm build -e development --serve example.js",
-    "prod": "mastarm build --env production --serve example.js"
+    "buildProd": "mastarm build -m --env production"
   },
   "standard": {
     "parser": "babel-eslint"
@@ -40,6 +40,7 @@
     "d3-selection": "^1.3.0",
     "d3-zoom": "^1.7.1",
     "deep-equal": "^1.0.1",
+    "express": "^4.17.1",
     "font-awesome": "^4.7.0",
     "haversine": "^1.1.0",
     "history": "^4.7.2",
