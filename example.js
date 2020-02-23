@@ -100,7 +100,7 @@ class OtpRRExample extends Component {
 
     /** mobile view **/
     const mobileView = (
-      <MobileMain map={(<Map />)} title={(<div className='navbar-title'>OpenTripPlanner</div>)} />
+      <MobileMain map={(<Map />)} title={(<div className='navbar-title'>TripPlanner</div>)} />
     )
 
     /** the main webapp **/
