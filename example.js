@@ -83,7 +83,7 @@ class OtpRRExample extends Component {
             <Col sm={6} md={4} className='sidebar'>
               <ViewerContainer>
                 <DefaultSearchForm />
-                <ErrorMessage />
+                {/* <ErrorMessage /> */}
                 <div className='desktop-narrative-container'>
                   <NarrativeRoutingResults />
                 </div>
