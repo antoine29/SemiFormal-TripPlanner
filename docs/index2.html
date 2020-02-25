@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Trip Planner utilizando el estandar GTFS para sistemas de transporte informal</h2>
+					<p>
+						<small>Por <a href="https://github.com/antoine29">Anthony Flores Gomez</a> </small>
+					</p>
+				</section>
+
+				<section data-background="images/1.png" data-background-size="contain">
+					<p style="background-color: white;color: black">Transporte publico: formal vs informal</p>
+				</section>
+
+				<section data-background="images/2.png" data-background-size="contain" >
+					<p style="background-color: white;color: black">Como representar la informacion del transporte publico informal ?</p>
+				</section>
+
+				<section>
+					<h3>Estandar GTFS</h3>
+					<ul>
+						<li align="justify">Estandar diseñado para representar la informacion de sistemas de <b> <u> transporte formal </u></b></li>
+						<li align="justify">Open source (Repositorio en GitHub)</li>
+						<li align="justify">Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales.</li>
+						<li align="justify">Estos archivos describen la informacion del sistema de transporte.</li>
+					</ul>
+				</section>
+
+				<section data-background="images/3.png" data-background-size="contain"></section>
+
+				<section>
+					<p align="justify">Un trip planner es un motor de búsqueda especializado para encontrar un viaje óptimo entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte.</p>
+					<ul>
+						<li align="justify">Funcionan (la gran mayoria) utilizando <b><u>datos en formato GTFS.</u></b></li>
+						<li align="justify">Componentes: </li>
+							<ul>
+								<li align="justify">Backend: Calcula los posibles viajes entre 2 puntos, API</li>
+								<li align="justify">Frontend: Aplicaciones (web o mobile) que consumen el API de backend</li>
+							</ul>
+					</ul>
+				</section>
+
+				<section>
+					<p align="justify">Problema central:<br>¿Cómo utilizar el estándar GTFS para mejorar el acceso a la información de transporte público en ciudades con sistemas de transporte informal?</p>
+					<p align="justify">Objetivo general:<br>Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
+				</section>
+
+				<section>
+					<p align="justify">Hipotesis:<br>La implementación del estándar GTFS en sistemas de transporte informal, mejorara el acceso a la información de estos sistemas en un 90%.</p>
+				</section>
+
+				<section>
+					<h3>Prototipo</h3>
+					<ul>
+						<li align="justify">Generacion de rutas de transporte publico: <b>geojson.io</b> </li>
+						<li align="justify">Generacion de feed GTFS: <b>geojson2gtfs</b></li>
+						<li align="justify">Motor trip planner (Backend): <b>OpenTripPlanner</b></li>
+						<li align="justify">TripPlanner (Frontend): <b>SemiFormal-TripPlanner</b></li>
+					</ul>
+				</section>
+
+				<section data-background="images/Arq.png" data-background-size="contain" >
+				</section>
+
+				<section data-background="images/geojsonio.png" data-background-size="contain" >
+				</section>
+
+				<section data-background="images/LPZRoutesRepo.gif" data-background-size="contain" >
+				</section>
+
+				<section data-background="images/geojson2gtfs.gif" data-background-size="contain" >
+				</section>
+
+				<section>
+					<video data-autoplay class="stretch" src="tripPlannerDemo.webm"</video>
+				</section>
+
+
+
+
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

@@ -21,87 +21,67 @@
 			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
 			document.getElementsByTagName( 'head' )[0].appendChild( link );
 		</script>
+
+		<style>
+			.relative {
+			 padding: 10px;
+			 position: relative;
+			 /* background-color: #fff; */
+			 margin: 10px;
+			} 
+			.navitem {
+			  display: inline-block;
+			  width: 300px; 
+			  height: 100px; 
+			  text-align: center;
+			  border: gray;
+			  background-color: #E8562A;
+			  color: #fff;
+			  cursor: pointer;
+			  font-size: 40px;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
 				<section>
-					<h2>Trip Planner utilizando el estandar GTFS para sistemas de transporte informal</h2>
-					<p>
-						<small>Por <a href="https://github.com/antoine29">Anthony Flores Gomez</a> </small>
+					<h1>La Paz Trip Planner</h2>
+					<ul>
+						<li>Encuentra una ruta de tranporte (minubuses, buses, LaPazBus o telefericos) entre 2 puntos de la ciudad de La Paz.</li>
+						<li>Observa la ruta de las lineas de transporte registradas en la aplicacion. </li>
+					</ul>
+					<div class="relative">
+						<button class="navitem" onclick="location.href='https://157.245.246.107/'">Ir a la aplicacion</button>
+						<button class="navitem" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLSdBVT_t13vZRVJz9mptsNn2DgHZyvBZs_-MUb7nfg-dXnwtWQ/viewform?usp=sf_link'">Cuestionario usabilidad</button>
+					</div>
+				</section>
+
+				<section data-background="images/introOptimized.gif" data-background-size="contain">
+					<p style="
+						position:fixed;
+						right: 0px;
+						background-color: #E8562A;
+						color: white;
+						font-size: 60px;
+						"
+					>
+						Busqueda de rutas
 					</p>
 				</section>
-
-				<section data-background="images/1.png" data-background-size="contain">
-					<p style="background-color: white;color: black">Transporte publico: formal vs informal</p>
+				
+				<section data-background="images/introP3Optimized.gif" data-background-size="contain">
+					<p style="
+						position:fixed;
+						right: 0px;
+						background-color: #E8562A;
+						color: white;
+						font-size: 60px;
+						"
+					>
+						Rutas disponibles
+					</p>
 				</section>
-
-				<section data-background="images/2.png" data-background-size="contain" >
-					<p style="background-color: white;color: black">Como representar la informacion del transporte publico informal ?</p>
-				</section>
-
-				<section>
-					<h3>Estandar GTFS</h3>
-					<ul>
-						<li align="justify">Estandar diseñado para representar la informacion de sistemas de <b> <u> transporte formal </u></b></li>
-						<li align="justify">Open source (Repositorio en GitHub)</li>
-						<li align="justify">Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales.</li>
-						<li align="justify">Estos archivos describen la informacion del sistema de transporte.</li>
-					</ul>
-				</section>
-
-				<section data-background="images/3.png" data-background-size="contain"></section>
-
-				<section>
-					<p align="justify">Un trip planner es un motor de búsqueda especializado para encontrar un viaje óptimo entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte.</p>
-					<ul>
-						<li align="justify">Funcionan (la gran mayoria) utilizando <b><u>datos en formato GTFS.</u></b></li>
-						<li align="justify">Componentes: </li>
-							<ul>
-								<li align="justify">Backend: Calcula los posibles viajes entre 2 puntos, API</li>
-								<li align="justify">Frontend: Aplicaciones (web o mobile) que consumen el API de backend</li>
-							</ul>
-					</ul>
-				</section>
-
-				<section>
-					<p align="justify">Problema central:<br>¿Cómo utilizar el estándar GTFS para mejorar el acceso a la información de transporte público en ciudades con sistemas de transporte informal?</p>
-					<p align="justify">Objetivo general:<br>Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
-				</section>
-
-				<section>
-					<p align="justify">Hipotesis:<br>La implementación del estándar GTFS en sistemas de transporte informal, mejorara el acceso a la información de estos sistemas en un 90%.</p>
-				</section>
-
-				<section>
-					<h3>Prototipo</h3>
-					<ul>
-						<li align="justify">Generacion de rutas de transporte publico: <b>geojson.io</b> </li>
-						<li align="justify">Generacion de feed GTFS: <b>geojson2gtfs</b></li>
-						<li align="justify">Motor trip planner (Backend): <b>OpenTripPlanner</b></li>
-						<li align="justify">TripPlanner (Frontend): <b>SemiFormal-TripPlanner</b></li>
-					</ul>
-				</section>
-
-				<section data-background="images/Arq.png" data-background-size="contain" >
-				</section>
-
-				<section data-background="images/geojsonio.png" data-background-size="contain" >
-				</section>
-
-				<section data-background="images/LPZRoutesRepo.gif" data-background-size="contain" >
-				</section>
-
-				<section data-background="images/geojson2gtfs.gif" data-background-size="contain" >
-				</section>
-
-				<section>
-					<video data-autoplay class="stretch" src="tripPlannerDemo.webm"</video>
-				</section>
-
-
-
-
 			</div>
 		</div>
 
