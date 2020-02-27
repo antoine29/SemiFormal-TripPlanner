@@ -1,0 +1,134 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<style>
+			.relative {
+			 padding: 10px;
+			 position: relative;
+			 /* background-color: #fff; */
+			 margin: 10px;
+			} 
+			.navitem {
+			  display: inline-block;
+			  width: 300px; 
+			  height: 100px; 
+			  text-align: center;
+			  border: gray;
+			  background-color: #E8562A;
+			  color: #fff;
+			  cursor: pointer;
+			  font-size: 40px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Trip Planner utilizando el estandar GTFS para sistemas de transporte informal</h2>
+					<p>
+						<small>Por <a href="https://github.com/antoine29">Anthony Flores Gomez</a> </small>
+					</p>
+				</section>
+
+				<section>
+					<section data-background="images/1.png" data-background-size="contain">
+						<p style="background-color: white;color: black">Transporte publico: formal vs informal</p>
+					</section>
+	
+					<section data-background="images/2.png" data-background-size="contain" >
+						<p style="background-color: white;color: black">Como representar la informacion del transporte publico informal ?</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h3>Estandar GTFS</h3>
+						<ul>
+							<li align="justify">Estandar para representar la informacion de sistemas de <b> <u> transporte formal </u></b></li>
+							<li align="justify">Open source</li>
+							<li align="justify">Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales.</li>
+						</ul>
+					</section>
+					
+					<section data-background="images/GTFSestructure.gif" data-background-size="contain">
+					</section>
+				</section>
+
+				<section>
+					<section data-background="images/GTFSoverWorld.png" data-background-size="contain" >
+						<p style="background-color: white;color: black; width: 400px; position: absolute; left: 50%;">Por que utilizar GTFS?</p>
+					</section>
+					
+					<section data-background="images/OTPstructure.png" data-background-size="contain">
+					</section>
+				</section>
+
+				<section>
+					<section data-background="images/introOptimized.gif" data-background-size="contain">
+						<p style="
+							position:fixed;
+							right: 0px;
+							background-color: #E8562A;
+							color: white;
+							font-size: 60px;
+							"
+						>
+							Busqueda de rutas
+						</p>
+					</section>
+					
+					<section data-background="images/introP3Optimized.gif" data-background-size="contain">
+						<p style="
+							position:fixed;
+							right: 0px;
+							background-color: #E8562A;
+							color: white;
+							font-size: 60px;
+							"
+						>
+							Rutas disponibles
+						</p>
+					</section>
+				</section>
+			</div>
+		</div>
+
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>
