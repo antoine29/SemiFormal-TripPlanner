@@ -1,0 +1,91 @@
+DIAPO0:
+Para desplazarse utilizando el servicio de transporte público de una ciudad es necesario conocer
+como este funciona. Es por eso que diversas Agencias de transporte en todo el mundo proveen la
+información relacionada con las paradas, rutas, horarios y otros aspectos de sus sistemas de
+transporte mediante publicaciones físicas, digitales o aplicaciones informáticas disponibles para
+el público.
+Pero en ciudades en desarrollo como La Paz y en el sesenta por ciento de los asentamientos
+urbanos del mundo, la información de los sistemas de transporte es limitada, incompleta o
+simplemente no está disponible. El crecimiento acelerado de estas ciudades genero una gran
+demanda de servicios de transporte público, que derivo en la proliferación de diversos sistemas
+de transporte público de naturaleza informal que actualmente funcionan en dichas
+ciudades. Recopilar y poner a disposición del público la información y herramientas informáticas
+para el uso de estos sistemas de transporte informal es aún un reto para estas ciudades.
+
+DIAPO1:
+Hace un momento mencione la palabra informal, hablando de sistemas de transporte, es posible
+clasificar estos en 2 grupos: formales e informales. Mientras que un sistema de transporte
+formal se caracteriza por contar rutas, paradas, horarios fijos, un sistema de transporte informal
+se caracteriza por la carencia de todos o algunos de las caracteristicas formales, es decir
+(no cuentan con paradas, rutas u horarios definidos).
+
+DIAPO2:
+En la mayoría de las ciudades que implementan algún tipo de sistema de transporte informal, la
+información relacionada con las ubicaciones de estaciones o paradas, rutas, tarifas, horarios y
+otro tipo de información clave de todo el sistema de transporte es muy limitada, inexistente o
+simplemente no está disponible al público. La falta de acceso a esta información impide a los
+usuarios saber cómo desplazarse fácilmente utilizando estos sistemas de transporte, crea
+limitaciones para que los planificadores de tránsito desarrollen o actualicen los mencionados
+sistemas de transporte y dificulta el desarrollo de aplicaciones de software orientadas al
+desplazamiento ciudadano urbano. El Banco Mundial estima que el 35% de las ciudades más grandes
+del mundo no tienen información o mapas de tránsito completos y el 92% de las 25 ciudades con más
+grandes ingresos a nivel mundial no tienen información o mapas de tránsito completos.
+
+DIAPO3:
+Desde su publicación en el anio 2006 la especificación GTFS (General transit feed specification) se
+ha convertido en el estándar para describir la información de sistemas de tránsito.
+Actualmente GTFS es el estándar open source de facto para representar la
+información de transporte público. Debido a que los feeds GTFS generalmente están disponibles
+al público, muchas aplicaciones de transporte público se han desarrollado utilizando este formato
+de datos. 
+
+DIAPO4:
+GTFS organiza los datos del sistema de transporte en archivos de texto que en conjunto crean
+una base de datos relacional. Esta información simple y estandarizada consiste en una serie de
+archivos de texto comprimidos en un archivo ZIP conocido como feed GTFS. Un paquete, 
+dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos
+opcionales. 
+
+DIAPO5:
+Debido a la naturaleza open source del estándar es posible encontrar y descargar
+cientos de feeds GTFS de plataformas como transitfeeds.com o transitland.com.
+La principal desventaja del estandar GTFS es que esta diseñada para representar la informacion de
+sistemas de tránsito formales. Esto significa que las ciudades con sistemas de tránsito semiformales
+o informales no pueden utilizar el estándar directamente.
+
+DIAPO6:
+Utilizando el estandar GTFS podemos generar informacion sobre un sistema de transporte. pero esta
+informacion esta en formato de archivos de texto, tablas, coordenadas y otros elementos que no pueden
+son accesibles para una persona o usuario de transporte regular. Por esto necesitamos de una
+aplicacion o sistema que tome esta informacion en formato GTFS y la ponga al alcance del usuario
+regular del sistema de transporte publico.
+
+DIAPO7:
+LEER NI MODO
+Si queremos utilizar una de estas aplicaciones en un sistema de transporte informal, nos vemos en la
+necesidad de utilizar el estandar GTFS en un sistema de transporte publico informal. necesitamos
+adaptar el estandar para representar la informacion de un sistema de transporte informal.  
+
+DIAPO8:
+El caso de estudio contemplado es el sistema de transporte publico de la ciudad de La Paz,
+Donde la prinicipal diferencia con un sistema formal es la falta de paradas definidas.
+prob
+obj
+
+DIAPO10:
+Hipo
+Se entiende de la siguiente manera:
+Si logramos generar datos en formato GTFS del sistema de transporte informal, como probamos que
+estos datos son utiles o funcionales (ya que al final son solo datos planos)?
+Para probar esto lo que haremos sera desplegar una aplicacion trip planner con la informacion en
+formato GTFS del sistema de transporte informal.
+Si la informacion en formato GTFS es valida, entonces podremos generar rutas utilizando la aplicacion
+trip planner.
+
+DIAPO:11
+Hablando sobre las metodologias, para la construccion del prototipo de pruebas, se utilizo la
+metodologia agil FDD. Para el disenio del componente web de la aplicacion se utilizo la metodologia
+WEB-UML
+
+DIAPO:12 prototipo
+*Ya 
