@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/black.css">
+		<!-- <link rel="stylesheet" href="css/theme/beige.css"> -->
 
 		<!-- Theme used for syntax highlighting of code -->
 		<link rel="stylesheet" href="lib/css/monokai.css">
@@ -31,7 +32,7 @@
 						Por <a href="https://github.com/antoine29">Anthony Flores Gomez</a>
 					</p>
 					<p>
-						<small>FCPN INFORMATICA UMSA</small>
+						<small>INFORMATICA FCPN UMSA</small>
 						<br>
 						<small>La Paz Junio 2020</small>
 					</p>
@@ -44,16 +45,57 @@
 						<li align="justify">En el 60% de los asentamientos urbanos del mundo, esta información de transporte es limitada, incompleta o simplemente no está disponible.</li>
 						<li align="justify">El crecimiento acelerado de estas ciudades genero una gran demanda de servicios de transporte público, que derivo en la proliferación de diversos sistemas de transporte público de naturaleza <b><u>informal.</u></b></li>
 					</ul>
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Para desplazarse utilizando el servicio de transporte público de una ciudad es necesario conocer
+como este funciona. Es por eso que diversas Agencias de transporte en todo el mundo proveen la
+información relacionada con las paradas, rutas, horarios y otros aspectos de sus sistemas de
+transporte mediante publicaciones físicas, digitales o aplicaciones informáticas disponibles para
+el público.
+Pero en ciudades en desarrollo como La Paz y en el sesenta por ciento de los asentamientos
+urbanos del mundo, la información de los sistemas de transporte es limitada, incompleta o
+simplemente no está disponible. El crecimiento acelerado de estas ciudades genero una gran
+demanda de servicios de transporte público, que derivo en la proliferación de diversos sistemas
+de transporte público de naturaleza informal que actualmente funcionan en dichas
+ciudades. Recopilar y poner a disposición del público la información y herramientas informáticas
+para el uso de estos sistemas de transporte informal es aún un reto para estas ciudades.
+						</p>
+					</aside>
 				</section>
 
 				<section>
 					<p align="justify">Transporte publico: formal vs informal</p>
 					<img src="images/1.png" style="margin: 0 auto 4rem auto;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Hace un momento mencione la palabra informal, hablando de sistemas de transporte, es posible
+clasificar estos en 2 grupos: formales e informales. Mientras que un sistema de transporte
+formal se caracteriza por contar con rutas, paradas, horarios fijos, un sistema de transporte informal
+se caracteriza por la carencia de todos o algunos de las caracteristicas formales, es decir
+(no cuentan con paradas, rutas u horarios definidos).
+
+						</p>
+					</aside>
+					
 				</section>
 
 				<section>
 					<p align="justify">Como representar la informacion del transporte publico (informal) ?</p>
 					<img src="images/2.png" style="margin: 0 auto 4rem auto; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							En la mayoría de las ciudades que implementan algún tipo de sistema de transporte informal, la
+información del sistema de transporte es muy limitada, inexistente o
+simplemente no está disponible al público. La falta de acceso a esta información impide a los
+usuarios saber cómo desplazarse fácilmente utilizando estos sistemas de transporte, crea
+limitaciones para que los planificadores de tránsito desarrollen o actualicen los mencionados
+sistemas de transporte y dificulta el desarrollo de aplicaciones de software orientadas al
+desplazamiento ciudadano urbano.
+						</p>
+					</aside>
 				</section>
 
 				<section>
@@ -63,18 +105,68 @@
 						<li align="justify">Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales.</li>
 						<li align="justify">Estos archivos describen la informacion del sistema de transporte.</li>
 					</ul>
-				</section>
 
-				<section data-background="images/3.png" data-background-size="contain"></section>
-
-				<section data-background="images/GTFSoverWorld.png" data-background-size="contain" ></section>
-
-				<section data-background="images/2.png" data-background-size="contain" >
-					<p style="background-color: white;color: black">Como hacer accesible la informacion del transporte publico (informal) ?</p>
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Desde su publicación en el anio 2006 la especificación GTFS (General transit feed specification) se
+ha convertido en el estándar para describir la información de sistemas de tránsito.
+Actualmente GTFS es el estándar open source de facto para representar la
+información de transporte público. Debido a que los feeds GTFS generalmente están disponibles
+al público, muchas aplicaciones de transporte público se han desarrollado utilizando este formato
+de datos. 
+						</p>
+					</aside>
 				</section>
 
 				<section>
-					<p align="justify">Un trip planner es un motor de búsqueda especializado para encontrar un viaje óptimo entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte (multimodal).</p>
+					<p align="justify">Estandar GTFS</p>
+					<img src="images/3.png" style="margin: 0 auto 4rem auto; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							GTFS organiza los datos del sistema de transporte en archivos de texto que en conjunto crean
+							una base de datos relacional. Esta información simple y estandarizada consiste en una serie de
+							archivos de texto comprimidos en un archivo ZIP conocido como feed GTFS. Un paquete, 
+							dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos
+							opcionales. 
+							
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">Por que GTFS?</p>
+					<img src="images/GTFSoverWorld.png" style="margin: 0 auto 4rem auto; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Debido a la naturaleza open source del estándar es posible encontrar y descargar
+cientos de feeds GTFS de plataformas como transitfeeds.com o transitland.com.
+La principal desventaja del estandar GTFS es que esta diseñada para representar la informacion de
+sistemas de tránsito formales. Esto significa que las ciudades con sistemas de tránsito semiformales
+o informales no pueden utilizar el estándar directamente.
+							
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">Como hacer accesible la informacion del transporte publico (informal) ?</p>
+					<img src="images/2.png" style="margin: 0 auto 4rem auto; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Utilizando el estandar GTFS podemos generar informacion sobre un sistema de transporte. pero esta
+informacion esta en formato de archivos de texto, tablas, coordenadas y otros elementos que no pueden
+son accesibles para una persona o usuario de transporte regular. Por esto necesitamos de una
+aplicacion o sistema que tome esta informacion en formato GTFS y la ponga al alcance del usuario
+regular del sistema de transporte publico.
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">TRIP PLANNER <br> Es un motor de búsqueda para encontrar una ruta entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte (multimodal).</p>
 					<ul>
 						<li align="justify">Funcionan (la gran mayoria) utilizando <b><u>datos en formato GTFS.</u></b></li>
 						<li align="justify">Componentes: </li>
@@ -83,6 +175,14 @@
 							<li align="justify">Frontend: Aplicaciones (web o mobile) que consumen el API de backend</li>
 						</ul>
 					</ul>
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							LEER NI MODO
+Si queremos utilizar una de estas aplicaciones en un sistema de transporte informal, necesitamos
+adaptar el estandar o especificacion GTFS para representar la informacion de un sistema de transporte informal.  
+						</p>
+					</aside>
 				</section>
 
 				<section>
@@ -92,6 +192,15 @@
 						<li>Objetivo general</li>
 						<p align="justify">Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
 					</ul>
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Para alcanzar el objetivo planteado, se considera como 
+							caso de estudio el sistema de transporte publico informa de la ciudad de La Paz,
+							La prinicipal diferencia de este sistema, con un sistema formal es la falta de paradas definidas para cada ruta.
+							
+						</p>
+					</aside>
 				</section>
 
 				<section>
@@ -99,6 +208,19 @@
 						<li>Hipotesis</li>
 						<p align="justify">El uso del estándar GTFS en el sistema de transporte informal de la ciudad de La Paz permitirá la implementación de una aplicación trip planner, para generar las posibles rutas de transporte público entre dos puntos geográficos dados.</p>
 					</ul>
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Cabe mencionar que para la investigacion se utilizo una Hipotesis del tipo cualititiva.
+							Se entiende de la siguiente manera:
+Si logramos generar datos en formato GTFS del sistema de transporte informal, como verificamos que
+estos datos son utiles o funcionales (ya que al final son solo datos planos)?
+Para verificar esto desplegaremos una aplicacion trip planner con la informacion en
+formato GTFS del sistema de transporte informal.
+Si la informacion en formato GTFS es valida, entonces la aplicacion trip planner podra generar informacion del transporte con nuestros modificados.
+De esta forma habriamos probado que es posible utilizar el estandar GTFS en un sistema d transporte informal.
+						</p>
+					</aside>
 				</section>
 
 				<section>
@@ -107,6 +229,14 @@
 						<img src="images/FDD.png" style="margin: 0 auto 4rem auto;">
 						<li align="justify">Modelado de componentes web con WEB-UML</li>
 					</ul>
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Hablando sobre las metodologias, para la construccion del prototipo de pruebas, se utilizo la
+metodologia agil FDD. Para el disenio del componente web de la aplicacion se utilizo la metodologia
+WEB-UML
+						</p>
+					</aside>
 				</section>
 
 				<section>
