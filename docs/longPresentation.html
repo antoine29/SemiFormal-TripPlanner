@@ -45,15 +45,14 @@
 
 					<aside class="notes" style="font-size: small;">
 						<p>
-							Para desplazarse utilizando el servicio de transporte público de una ciudad es necesario conocer
-como este funciona. Es por eso que diversas Agencias de transporte en todo el mundo proveen la
+							Agencias de transporte en ciudades de todo el mundo proveen la
 información relacionada con las paradas, rutas, horarios y otros aspectos de sus sistemas de
 transporte mediante publicaciones físicas, digitales o aplicaciones informáticas disponibles para
 el público.
 Pero en ciudades en desarrollo como La Paz y en el 60% de los asentamientos
-urbanos del mundo, la información de los sistemas de transporte es limitada, incompleta o
+urbanos del mundo, esta información es limitada, incompleta o
 simplemente no está disponible.
-Esto generalmente se debe a que estas ciudades implementan algun tipo de sistema de transporte informal. 
+Esto generalmente se debe a que estas ciudades implementan algun tipo de sistema de transporte informal.
 Hablando de sistemas de transporte, es posible
 clasificar estos en 2 grupos: formales e informales. Mientras que un sistema de transporte
 formal se caracteriza por contar con rutas, paradas y horarios establecidos, un sistema de transporte informal
@@ -124,14 +123,13 @@ Debido a la amplia adopcion que ha tenido, muchas aplicaciones informaticas de t
 
 					<aside class="notes" style="font-size: small;">
 						<p>
-							Debido a su naturaleza open source, es posible encontrar y descargar
-cientos de feeds GTFS de sistemas de transporte alrededor del mundo.
-La principal desventaja del estandar GTFS es que esta diseñado para representar la informacion de
-sistemas de tránsito formales. La especificaion no considera sistemas de tránsito informales.
+							Su principal  ventaja es que es posible encontrar y descargar
+cientos de feeds GTFS de sistemas de transporte de ciudades alrededor del mundo.
+Y la principal desventaja es que GTFS esta diseñado para representar la informacion de
+sistemas de tránsito formales. No considera sistemas de tránsito informales.
 
-La informacion en formato GTFS por si sola no es util para el usuario regular de transporte
-Por esto necesitamos de una aplicacion o sistema que tome esta informacion en formato GTFS y la transforme en informacion relevante (como mapas o graficos) utiles para el usuario
-para cualquier usuario
+Esta informacion en formato GTFS por si sola no es util para el usuario regular de transporte
+Por esto necesitamos de una aplicacion o sistema que tome esta informacion en formato GTFS y la transforme en informacion relevante o util para el usuario (como mapas o graficos).
 						</p>
 					</aside>
 				</section>
@@ -144,7 +142,7 @@ para cualquier usuario
 						Funcionan (la gran mayoria) utilizando datos en formato GTFS.
 						Componentes:
 						Backend: Calcula los posibles viajes/rutas entre 2 puntos. (API)
-						Frontend: Aplicaciones (web o mobile) que consumen el API de backend
+						Frontend: Interfaces (web o mobile) que consumen el API de backend y que interactuan con el usuario final, 
 					</aside>
 				</section>
 
@@ -200,7 +198,7 @@ y orientada a procesos que se centra principalmente en las fases de diseño y co
 						2. Como crear/editar estas rutas
 						3. Donde se almacenaran estas rutas
 						4. Como generar un fedd GTFS a partir de estas rutas de transporte informal
-						5. Como utilizamos esta informacion en formato GTFS
+						5. Como utilizamos esta informacion en formato GTFS en una aplicacion trip planner.
 						Se comenzara con un diseño de la solucion para cada feature listado
 					</aside>
 				</section>
