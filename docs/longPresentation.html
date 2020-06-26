@@ -39,12 +39,9 @@
 				</section>
 
 				<section>
-					<p align="justify">INTRODUCCION</p>
-					<ul>
-						<li align="justify">Agencias de transporte en todo el mundo proveen información de paradas, rutas, horarios y otros aspectos de sistemas de transporte.</li>
-						<li align="justify">En el 60% de los asentamientos urbanos del mundo, esta información de transporte es limitada, incompleta o simplemente no está disponible.</li>
-						<li align="justify">El crecimiento acelerado de estas ciudades genero una gran demanda de servicios de transporte público, que derivo en la proliferación de diversos sistemas de transporte público de naturaleza <b><u>informal.</u></b></li>
-					</ul>
+					<p align="justify">1. Introduccion</p>
+					<p align="justify">1.1 Transporte publico: formal vs informal</p>
+					<img src="images/formVsInform.png" style="margin: 0 auto 4rem auto; height: 500px;">
 
 					<aside class="notes" style="font-size: small;">
 						<p>
@@ -53,168 +50,51 @@ como este funciona. Es por eso que diversas Agencias de transporte en todo el mu
 información relacionada con las paradas, rutas, horarios y otros aspectos de sus sistemas de
 transporte mediante publicaciones físicas, digitales o aplicaciones informáticas disponibles para
 el público.
-Pero en ciudades en desarrollo como La Paz y en el sesenta por ciento de los asentamientos
+Pero en ciudades en desarrollo como La Paz y en el 60% de los asentamientos
 urbanos del mundo, la información de los sistemas de transporte es limitada, incompleta o
-simplemente no está disponible. El crecimiento acelerado de estas ciudades genero una gran
-demanda de servicios de transporte público, que derivo en la proliferación de diversos sistemas
-de transporte público de naturaleza informal que actualmente funcionan en dichas
-ciudades. Recopilar y poner a disposición del público la información y herramientas informáticas
-para el uso de estos sistemas de transporte informal es aún un reto para estas ciudades.
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<p align="justify">Transporte publico: formal vs informal</p>
-					<img src="images/1.png" style="margin: 0 auto 4rem auto;">
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							Hace un momento mencione la palabra informal, hablando de sistemas de transporte, es posible
+simplemente no está disponible.
+Esto generalmente se debe a que estas ciudades implementan algun tipo de sistema de transporte informal. 
+Hablando de sistemas de transporte, es posible
 clasificar estos en 2 grupos: formales e informales. Mientras que un sistema de transporte
-formal se caracteriza por contar con rutas, paradas, horarios fijos, un sistema de transporte informal
-se caracteriza por la carencia de todos o algunos de las caracteristicas formales, es decir
-(no cuentan con paradas, rutas u horarios definidos).
-
-						</p>
-					</aside>
-					
-				</section>
-
-				<section>
-					<p align="justify">Como representar la informacion del transporte publico (informal) ?</p>
-					<img src="images/2.png" style="margin: 0 auto 4rem auto; height: 500px;">
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							En la mayoría de las ciudades que implementan algún tipo de sistema de transporte informal, la
-información del sistema de transporte es muy limitada, inexistente o
-simplemente no está disponible al público. La falta de acceso a esta información impide a los
-usuarios saber cómo desplazarse fácilmente utilizando estos sistemas de transporte, crea
-limitaciones para que los planificadores de tránsito desarrollen o actualicen los mencionados
-sistemas de transporte y dificulta el desarrollo de aplicaciones de software orientadas al
-desplazamiento ciudadano urbano.
+formal se caracteriza por contar con rutas, paradas y horarios establecidos, un sistema de transporte informal
+se caracteriza por la carencia de todas o algunas de las caracteristicas formales.
 						</p>
 					</aside>
 				</section>
 
 				<section>
-					<h3 align="justify">Estandar GTFS</h3>
-					<ul>
-						<li align="justify">Estandar diseñado para representar la informacion de sistemas de <b> <u> transporte formal </u></b></li>
-						<li align="justify">Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales.</li>
-						<li align="justify">Estos archivos describen la informacion del sistema de transporte.</li>
-					</ul>
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							Desde su publicación en el anio 2006 la especificación GTFS (General transit feed specification) se
-ha convertido en el estándar para describir la información de sistemas de tránsito.
-Actualmente GTFS es el estándar open source de facto para representar la
-información de transporte público. Debido a que los feeds GTFS generalmente están disponibles
-al público, muchas aplicaciones de transporte público se han desarrollado utilizando este formato
-de datos. 
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<p align="justify">Estandar GTFS</p>
-					<img src="images/3.png" style="margin: 0 auto 4rem auto; height: 500px;">
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							GTFS organiza los datos del sistema de transporte en archivos de texto que en conjunto crean
-							una base de datos relacional. Esta información simple y estandarizada consiste en una serie de
-							archivos de texto comprimidos en un archivo ZIP conocido como feed GTFS. Un paquete, 
-							dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos
-							opcionales. 
-							
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<p align="justify">Por que GTFS?</p>
-					<img src="images/GTFSoverWorld.png" style="margin: 0 auto 4rem auto; height: 500px;">
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							Debido a la naturaleza open source del estándar es posible encontrar y descargar
-cientos de feeds GTFS de plataformas como transitfeeds.com o transitland.com.
-La principal desventaja del estandar GTFS es que esta diseñada para representar la informacion de
-sistemas de tránsito formales. Esto significa que las ciudades con sistemas de tránsito semiformales
-o informales no pueden utilizar el estándar directamente.
-							
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<p align="justify">Como hacer accesible la informacion del transporte publico (informal) ?</p>
-					<img src="images/2.png" style="margin: 0 auto 4rem auto; height: 500px;">
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							Utilizando el estandar GTFS podemos generar informacion sobre un sistema de transporte. pero esta
-informacion esta en formato de archivos de texto, tablas, coordenadas y otros elementos que no pueden
-son accesibles para una persona o usuario de transporte regular. Por esto necesitamos de una
-aplicacion o sistema que tome esta informacion en formato GTFS y la ponga al alcance del usuario
-regular del sistema de transporte publico.
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<p align="justify">TRIP PLANNER <br> Es un motor de búsqueda para encontrar una ruta entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte (multimodal).</p>
-					<ul>
-						<li align="justify">Funcionan (la gran mayoria) utilizando <b><u>datos en formato GTFS.</u></b></li>
-						<li align="justify">Componentes: </li>
-						<ul>
-							<li align="justify">Backend: Calcula los posibles viajes/rutas entre 2 puntos. (API)</li>
-							<li align="justify">Frontend: Aplicaciones (web o mobile) que consumen el API de backend</li>
-						</ul>
-					</ul>
-
-					<aside class="notes" style="font-size: small;">
-						<p>
-							LEER NI MODO
-Si queremos utilizar una de estas aplicaciones en un sistema de transporte informal, necesitamos
-adaptar el estandar o especificacion GTFS para representar la informacion de un sistema de transporte informal.  
-						</p>
-					</aside>
-				</section>
-
-				<section>
-					<ul>
-						<li>Problema central</li>
+					<p align="justify">1.2 Problema central</p>
+					<blockquote style="width: 90%;">
 						<p align="justify">¿Cómo utilizar el estándar GTFS para mejorar el acceso a la información de transporte público en ciudades con sistemas de transporte informal?</p>
-						<li>Objetivo general</li>
-						<p align="justify">Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
-					</ul>
+					</blockquote>
 
 					<aside class="notes" style="font-size: small;">
 						<p>
-							Para alcanzar el objetivo planteado, se considera como 
-							caso de estudio el sistema de transporte publico informa de la ciudad de La Paz,
-							La prinicipal diferencia de este sistema, con un sistema formal es la falta de paradas definidas para cada ruta.
-							
+							La investigacion considera como caso de estudio el sistema de transporte publico informa de la ciudad de La Paz,
+							La prinicipal diferencia de este sistema, con un sistema formal es la falta de paradas definidas para cada ruta.							
 						</p>
 					</aside>
 				</section>
 
 				<section>
-					<ul>
-						<li>Hipotesis</li>
-						<p align="justify">El uso del estándar GTFS en el sistema de transporte informal de la ciudad de La Paz permitirá la implementación de una aplicación trip planner, para generar las posibles rutas de transporte público entre dos puntos geográficos dados.</p>
-					</ul>
+					<p align="justify">1.3 Objetivo general</p>
+					<blockquote style="width: 90%;">
+						<p align="justify">Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
+					</blockquote>
+				</section>
 
+				<section>
+					<p align="justify">1.4 Hipotesis</p>
+					<blockquote style="width: 90%;">
+						<p align="justify">El uso del estándar GTFS en el sistema de transporte informal de la ciudad de La Paz permitirá la implementación de una aplicación trip planner, para generar las posibles rutas de transporte público entre dos puntos geográficos dados.</p>
+					</blockquote>
+					
 					<aside class="notes" style="font-size: small;">
 						<p>
-							Cabe mencionar que para la investigacion se utilizo una Hipotesis del tipo cualititiva.
+							La investigacion se utilizo una Hipotesis del tipo cualititiva.
 							Se entiende de la siguiente manera:
 Si logramos generar datos en formato GTFS del sistema de transporte informal, como verificamos que
-estos datos son utiles o funcionales (ya que al final son solo datos planos)?
+estos datos son utiles o funcionales (ya que al final son solo datos planos, tablas que no son comprensibles para el usuario de transporte regular)?
 Para verificar esto desplegaremos una aplicacion trip planner con la informacion en
 formato GTFS del sistema de transporte informal.
 Si la informacion en formato GTFS es valida, entonces la aplicacion trip planner podra generar informacion del transporte con nuestros modificados.
@@ -224,240 +104,219 @@ De esta forma habriamos probado que es posible utilizar el estandar GTFS en un s
 				</section>
 
 				<section>
-					<ul>
-						<li align="justify">Metodologia de desarrollo FDD</li>
-						<img src="images/FDD.png" style="margin: 0 auto 4rem auto;">
-						<li align="justify">Modelado de componentes web con WEB-UML</li>
-					</ul>
-
+					<p align="justify">2. Marco Teorico</p>
+					<p align="justify">2.1 Estandar GTFS</p>
+						<img src="images/3.png" style="margin: 0 auto 4rem auto; height: 500px;">
+					
 					<aside class="notes" style="font-size: small;">
 						<p>
-							Hablando sobre las metodologias, para la construccion del prototipo de pruebas, se utilizo la
-metodologia agil FDD. Para el disenio del componente web de la aplicacion se utilizo la metodologia
-WEB-UML
+							Acronimo de (General transit feed specification).
+							Desde su publicación en el año 2006 se ha convertido en el estándar de facto para representar la información de sistemas de tránsito.
+							Un paquete, dataset o feed de datos GTFS se compone por seis archivos requeridos y otros archivos opcionales que conforman una base de datos relacional que describe la informacion del sistema de transporte.
+Debido a la amplia adopcion que ha tenido, muchas aplicaciones informaticas de transporte público se han desarrollado utilizando informacion en formato GTFS. 
 						</p>
 					</aside>
 				</section>
 
 				<section>
-					<h3 align="justify">Prototipo</h3>
-					<ol>
-						<li align="justify">Representacion/generacion de rutas de transporte publico informal: <b>archivos geojson</b> </li>
-						<li align="justify">Generacion del feed GTFS: <b>geojson2gtfs</b></li>
-						<li align="justify">Trip planner</li>
-						<ul>
-							<li align="justify">Componente Backend: <br> <b>OpenTripPlanner</b></li>
-							<li align="justify">Componente Frontend: (cliente web): <br> <b>SemiFormal-TripPlanner</b></li>
-						</ul>
-					</ol>
+					<p align="justify">2.1 Estandar GTFS</p>
+					<img src="images/GTFSoverWorld.png" style="margin: 0 auto 4rem auto; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							Debido a su naturaleza open source, es posible encontrar y descargar
+cientos de feeds GTFS de sistemas de transporte alrededor del mundo.
+La principal desventaja del estandar GTFS es que esta diseñado para representar la informacion de
+sistemas de tránsito formales. La especificaion no considera sistemas de tránsito informales.
+
+La informacion en formato GTFS por si sola no es util para el usuario regular de transporte
+Por esto necesitamos de una aplicacion o sistema que tome esta informacion en formato GTFS y la transforme en informacion relevante (como mapas o graficos) utiles para el usuario
+para cualquier usuario
+						</p>
+					</aside>
 				</section>
 
 				<section>
-					<p align="justify">1. Representacion de rutas de transporte publico informal</p>
+					<p align="justify">2.2 Trip Planner</p>
+					<img src="images/tripPlanner.png" style="margin: 0 auto 4rem auto; height: 500px;">
+					<aside class="notes" style="font-size: small;">
+						Es un motor de búsqueda para encontrar una ruta entre dos o más ubicaciones determinadas, a veces utilizando más de un modo de transporte (multimodal).
+						Funcionan (la gran mayoria) utilizando datos en formato GTFS.
+						Componentes:
+						Backend: Calcula los posibles viajes/rutas entre 2 puntos. (API)
+						Frontend: Aplicaciones (web o mobile) que consumen el API de backend
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">2.3 Metodologia de desarrollo FDD</p>
+					<img src="images/FDD.png" style="margin: 0 auto 4rem auto;">
+
+					<aside class="notes" style="font-size: small;">
+						<p>
+							FDD (Feature driven development) es una metodología de desarrollo ágil, iterativa, incremental
+y orientada a procesos que se centra principalmente en las fases de diseño y construcción del prototipo de software. Se compone por 5 subprocesos...
+						</p>
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">3. Marco Aplicativo</p>
+					<p align="justify">3.1 Definicion de features</p>
+					<table>
+						<thead>
+							<tr>
+								<th></th>
+								<th>Feature</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1</td>
+								<td>Representación de rutas de transporte informal</td>
+							</tr>
+							<tr>
+								<td>2</td>
+								<td>Adición/Edición de rutas de transporte informal</td>
+							</tr>
+							<tr>
+								<td>3</td>
+								<td>Almacenamiento de rutas de transporte informal</td>
+							</tr>
+							<tr>
+								<td>4</td>
+								<td>Generación del feed GTFS</td>
+							</tr>
+							<tr>
+								<td>5</td>
+								<td>Trip planner</td>
+							</tr>
+						</tbody>
+					</table>
+
+					<aside class="notes" style="font-size: small;">
+						Se defininen los sgts features.
+						1. Como representar una ruta de transporte informal <br>
+						2. Como crear/editar estas rutas
+						3. Donde se almacenaran estas rutas
+						4. Como generar un fedd GTFS a partir de estas rutas de transporte informal
+						5. Como utilizamos esta informacion en formato GTFS
+						Se comenzara con un diseño de la solucion para cada feature listado
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">3.2 Diseño de features</p>
+					<p align="justify">3.2.1 Representación de rutas de transporte informal</p>
 					<img src="images/route0.png" style="margin-top: 0%; margin-bottom: 0%;">
 					<p style="font-size: large; margin-top: 0%; margin-bottom: 0%;">Una ruta de transporte informal tiene muchas posibles paradas. Registrando solo una cantidad de estas.</p>
 					<img src="images/route1.png">
 				</section>
 
 				<section>
-					<p align="justify">1. Representacion de rutas de transporte publico informal</p>
-					<img src="images/geojson.png" style="margin: 0 auto 4rem auto;">
+					<p align="justify">3.2.2 Adición/Edición de rutas de transporte informal</p>
+					<img src="images/routesEditor.png" style="margin: 0 auto 4rem auto; width: 60%; height: 500px;">
 				</section>
 
 				<section>
-					<p align="justify">1. Generacion de rutas de transporte publico informal</p>
-					<img src="images/geojsonio.png" style="margin: 0 auto 4rem auto;">
+					<p align="justify">3.2.3 Almacenamiento de rutas de transporte informal</p>
+					<img src="images/geosjonStorageEdited.png" style="margin: 0 auto 4rem auto; width: 100%; height: 500px;">
 				</section>
 
 				<section>
-					<p align="justify">1. Generacion de rutas de transporte publico informal</p>
-					<div style="display: block;
-								margin: 0px;
-								padding: 0px;
-								position: relative;
-								height: auto;
-								overflow-y: hidden;
-								word-wrap:normal;
-								white-space:nowrap;
-								margin-top: 0%;">
-						<img src="images/route2.png" style="max-width: 50%;">
-						<img src="images/routeGTFS.png" style="max-width: 50%;">
-					</div>
-					<p style="font-size: large; margin-top: 0%; margin-bottom: 0%;">Con una ruta en formato geoJson se generan las entidades GTFS requeridas.</p>
-				</section>
-
-				<section>
-					<p align="justify">1.1 Almacenamiento/validacion de rutas de transporte publico informal</p>
-					<img src="images/github.png" style="margin: 0 auto 4rem auto; width: 100%;">
-				</section>
-
-				<section>
-					<p align="justify">1.1 Repositorio de rutas de transporte publico informal</p>
-					<img src="images/LPZRoutesRepo.gif" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
-				</section>
-
-				<section>
-					<p align="justify">2. Generacion del feed GTFS</p>
+					<p align="justify">3.2.4 Generacion del feed GTFS</p>
 					<img src="images/geojson2gtfsSeq.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
 				</section>
 
 				<section>
-					<p align="justify">3. Trip Planner (backend)</p>
-					<img src="images/otp.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
-				</section>
-				
-				<section>
-					<p align="justify">3. Trip Planner (web client)</p>
-					<img src="images/tripPlannerWebCLientSeq.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
-				</section>
-					
-				<section>
-					<p align="justify">Interaccion entre componentes del prototipo</p>
-					<img src="images/Arq.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
+					<p align="justify">3.2.5 Trip Planner (backend)</p>
+					<img src="images/otpEdited.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
+
+					<aside class="notes" style="font-size: small;">
+						Notar que se tiene planeado desplegar OTP con 3 feeds GTFS.
+						Solo queda desarrollar un cliente web que interacture con OTP.
+					</aside>
 				</section>
 
 				<section>
-					<h3 align="justify">Pruebas y resultados</h3>
-					<ul>
-						<li align="justify">Se archivos geojson para 26 rutas de transporte publico informal y 14 de transporte publico formal.</li>
-						<ul>
-							<li align="justify">En promedio 192 paradas/stops por cada ruta.</li>
-						</ul>
-						<li align="justify">Se almacenaron estos archivos en un repositorio de github</li>
-						<ul>
-							<li align="justify">Se verifico el proceso de validacion de adicion/edicion de archivos de rutas en el repositorio.</li>
-						</ul>
-						<li>Se genero un feed GTFS con los archivos geojson.</li>
-						<li>Se valido el feed GTFS .</li>
-					</ul>
+					<p align="justify">3.3 Construccion de features</p>
+					<p align="justify">3.3.1 Representación de rutas de transporte informal</p>
+					<img src="images/geojson.png" style="margin: 0 auto 4rem auto;">
 				</section>
 
 				<section>
-					<p align="justify">Rutas mapeadas a archivos geojson</p>
-					<img src="images/routes.png" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
+					<p align="justify">3.3.2 Adición/Edición de rutas de transporte informal</p>
+					<img src="images/geojsonio.png" style="margin: 0 auto 4rem auto;">
 				</section>
 
 				<section>
-					<p align="justify">Validacion de la adicion/edicion de archivos de rutas de transporte (geojson)</p>
-					<img src="images/validacionOk.png" style="margin: 0 auto 4rem auto; width: 100%;">
+					<p align="justify">3.3.3 Almacenamiento de rutas de transporte informal</p>
+					<img src="images/github.png" style="margin: 0 auto 4rem auto; width: 100%;">
 				</section>
 
 				<section>
-					<p align="justify">Validacion de la adicion/edicion de archivos de rutas de transporte (geojson)</p>
-					<img src="images/validacionError.png" style="margin: 0 auto 4rem auto; width: 100%;">
-				</section>
-
-				<section>
-					<p align="justify">Generacion del feed GTFS</p>
+					<p align="justify">3.3.4 Generacion del feed GTFS</p>
 					<img src="images/geojson2gtfs.gif" style="margin: 0 auto 4rem auto; width: 100%;">
 				</section>
 
 				<section>
-					<p align="justify">Validacion del feed GTFS</p>
-					<img src="images/validacionGTFSForm.png" style="margin: 0 auto 4rem auto; width: 100%;">
+					<p align="justify">3.3.5 Trip Planner (web client)</p>
+					<video data-autoplay class="stretch" src="tripPlannerDemo.webm"</video>
 				</section>
 
 				<section>
-					<p align="justify">Validacion del feed GTFS</p>
+					<p align="justify">4. Pruebas y resultados</p>
+					<p align="justify">4.1 Adición/Edición de rutas de transporte informal</p>
+					<img src="images/routes.png" style="margin: 0 auto 4rem auto; width: 100%; height: 500px;">
+
+					<aside class="notes" style="font-size: small;">
+						Para probar el funcionamiento de la representación de rutas de transporte informal se mapearon 26 rutas de transporte informal de la ciudad de La Paz con un promedio 192 paradas/stops por cada ruta.	
+						Ademas de 14 de transporte publico formal.
+					</aside>
+				</section>
+
+				<section>
+					<p align="justify">4.2 Almacenamiento de rutas de transporte informal</p>
+					<img src="images/LPZRoutesRepo.gif" style="margin: 0 auto 4rem auto; width: 100%; height: 550px;">
+				</section>
+
+				<section>
+					<p align="justify">4.3 Generacion del feed GTFS</p>
+					<img src="images/validacionGTFSForm.png" style="margin: 0 auto 4rem auto; width: 100%;">
 					<img src="images/validacionGTFSInform.png" style="margin: 0 auto 4rem auto; width: 100%;">
+				</section>
+
+				<section>
+					<p align="justify">4.4 Trip Planner (web client)</p>
+					<img src="images/encuesta.png" style="margin: 0 auto 4rem auto; width: 100%;">
 				</section>
 				
 				<section>
-					<p align="justify">Trip Planner (backend)</p>
-					<img src="images/otpDeploy.png" style="margin: 0 auto 4rem auto; width: 100%;">
-				</section>
-
-				<section>
-					<p align="justify">Trip Planner (web client)</p>
-					<video data-autoplay class="stretch" src="tripPlannerDemo.webm"</video>
-					</section>
-					
-				<section>
-					<p align="justify">Resultados de encuestas</p>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th>Pregunta</th>
-								<th>Resultados</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>1</td>
-								<td>¿Le es útil la información de las rutas de transporte público que encuentra en esta aplicación?</td>
-								<td>Si: 100%</td>
-							</tr>
-							<tr>
-								<td>2</td>
-								<td>¿La aplicación pudo mostrarle las rutas de transporte público que pasan por puntos que marco en el mapa?</td>
-								<td>Si: 62.5% No: 37.5%</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<p align="justify">Resultados de encuestas</p>
-					<table>
-						<thead>
-							<tr>
-								<th></th>
-								<th>Pregunta</th>
-								<th>Resultados</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>3</td>
-								<td>¿Qué tan fácil es utilizar esta aplicación?</td>
-								<td>Sencilla: 50% Regular: 25% Compleja: 25%</td>
-							</tr>
-							<tr>
-								<td>4</td>
-								<td>¿Encontró alguna falla o error utilizando esta aplicación?</td>
-								<td>Si: 62.5% No: 37.5%</td>
-							</tr>
-						</tbody>
-					</table>
-				</section>
-
-				<section>
-					<h3 align="justify">Conclusiones</h3>
+					<h3 align="justify">5. Conclusiones</h3>
 					<ul>
-						<li align="justify">Es posible representar la informacion de rutas de transporte publico informal utilizando archivos geojson.</li>
-						<li align="justify">Estos archivos geojson pueden ser almacenados, versionados y modificados utilizando un repositorio git.</li>
-						<li align="justify">Utilizando la aplicacion de consola geojson2gtfs, es posible transformar un conjunto de archivos geojson en un feed GTFS.</li>
+						<li align="justify">GTFS y transporte informal.</li>
+						<li align="justify">Archivos geojson para representar rutas de transporte informal.</li>
+						<li align="justify">OpenTripPlanner funcionando con un feed GTFS informal.</li>
 					</ul>
-				</section>
-				<section>
-					<h3 align="justify">Conclusiones</h3>
-					<ul>
-						<li align="justify">Es posible utilizar el feed GTFS generado en conjunto con la aplicacion OpenTripPlanner para generar la informacion de rutas de transporte publico.</li>
-						<li align="justify">Mediante un cliente web es posible acceder a la informacion del sistema de transporte publico formal e informal.</li>
-					</ul>
-				</section>
-				<section>
-					<h3 align="justify">Conclusiones</h3>
-					<ul>
-						<li align="justify">Se logro adaptar la informacion de un sistema de transporte informal al formato de la especificacion GTFS.</li>
-						<li align="justify">Se comprobo que es posible desplegar una aplicacion TripPlanner utilizando la informacion en formato GTFS de un sistema de transporte informal.</li>
-					</ul>
-				</section>
 
-				<section>
-					<h3 align="justify">Recomendaciones</h3>
-					<ul>
-						<li align="justify">La generacion automática de puntos o paradas entre dos puntos de una ruta en el mapa (autoMapping) podria reducir y facilitar el proceso de generacion de rutas.</li>
-						<li align="justify">Reutilizar los puntos marcados para una ruta en otras rutas que pasen por las mismas direcciones. Esto reduciría drasticamente la cantidad de puntos o stops por cada ruta. Pero exigiria un rediseño total de la aplicacion geojson2gtfs.</li>
-					</ul>
+					<aside class="notes" style="font-size: small;">
+						Es posible representar la informacion de rutas de transporte publico informal utilizando archivos geojson.
+						Estos archivos geojson pueden ser almacenados, versionados y modificados utilizando un repositorio git.
+						Utilizando la aplicacion de consola geojson2gtfs, es posible transformar un conjunto de archivos geojson en un feed GTFS.
+						Es posible utilizar el feed GTFS generado en conjunto con la aplicacion OpenTripPlanner para generar la informacion de rutas de transporte publico.
+						Mediante un cliente web es posible acceder a la informacion del sistema de transporte publico formal e informal.
+						Se logro adaptar la informacion de un sistema de transporte informal al formato de la especificacion GTFS.
+						Se comprobo que es posible desplegar una aplicacion TripPlanner utilizando la informacion en formato GTFS de un sistema de transporte informal.
+					</aside>
 				</section>
-
+				
 				<section>
-					<h3 align="justify">Recomendaciones</h3>
+					<h3 align="justify">6. Recomendaciones</h3>
 					<ul>
-						<li align="justify">Considerar un servicio de reverse geocoding onDemand. Con este servicio no seria necesario almacenar la direccion fisica de cada parada (coordenada), ya se podría determinar esta dirección en cada respuesta.</li>
-						<li align="justify">La especificación derivada GTFS-flex (actualmente en fase de pruebas) podria ser una alternativa mas para mejorar el acceso a la informacion en sistemas de transporte publico informal.</li>
+						<li align="justify">AutoMapping</li>
+						<li align="justify">Reutilizacion de coordenadas.</li>
+						<li align="justify">Local reverse geocoding</li>
+						<li align="justify">GTFS-flex</li>
 					</ul>
 				</section>
 
