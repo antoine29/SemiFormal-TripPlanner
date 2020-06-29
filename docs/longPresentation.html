@@ -80,6 +80,12 @@ se caracteriza por la carencia de todas o algunas de las caracteristicas formale
 					<blockquote style="width: 90%;">
 						<p align="justify">Adaptar el estándar GTFS en sistemas de transporte informal, para generar datos que puedan ser utilizados en una herramienta trip planner.</p>
 					</blockquote>
+
+					<aside class="notes" style="font-size: small;">
+						- Describir la información de un sistema de transporte informal utilizando el estándar GTFS.
+						- Proporcionar acceso a esta información mediante una herramienta trip planner.
+						- Evaluar el funcionamiento de la herramienta trip planner mediante pruebas o casos de uso.
+					</aside>
 				</section>
 
 				<section>
@@ -152,6 +158,7 @@ Require de una aplicacion o sistema que tome esta informacion en formato GTFS y 
 						<p>
 							FDD (Feature driven development) es una metodología de desarrollo ágil, iterativa e incremental
 que se centra principalmente en las fases de diseño y construcción del prototipo de software. Se compone por 5 subprocesos...
+							6 hitos para seguir el proceso de cada feat.: Revisión del dominio(1%), diseño(40%), inspeccion de diseño(3%), codigo(45%), inspeccion de codigo(10%), integracion del feat(1%).
 						</p>
 					</aside>
 				</section>
@@ -379,37 +386,33 @@ que se centra principalmente en las fases de diseño y construcción del prototi
 				<section>
 					<h3 align="justify">5. Conclusiones</h3>
 					<ul>
-						<li align="justify">GTFS y transporte informal.</li>
 						<li align="justify">Archivos geojson para representar las rutas de transporte informal.</li>
-						<li align="justify">OpenTripPlanner funcionando con un feed GTFS informal.</li>
+						<li align="justify">GTFS con datos de un sistema de transporte informal.</li>
+						<li align="justify">OpenTripPlanner generando informacion de rutas en un sistema de transporte informal.</li>
 					</ul>
 
 					<aside class="notes" style="font-size: small;">
 						Se concluye que:
-						- Es posible representar la informacion de rutas de transporte publico informal utilizando archivos geojson.
-							y transformar estos archivos geojson en un feed GTFS.
-						- Es posible utilizar el feed GTFS generado con la aplicacion OpenTripPlanner para generar la informacion de rutas de transporte publico en la ciudad de lpz.
-						- Mediante un cliente web se verifico la valides de las rutas generadas por OTP.
-						- Adaptando la informacion de un sistema de transporte informal al formato de la especificacion GTFS.
-							se comprobo que es posible desplegar una aplicacion TripPlanner utilizando la informacion en formato GTFS de un sistema de transporte informal.
+						- Es posible representar la informacion de rutas de transporte publico informal utilizando archivos geojson y generar un feed GTFS a partir de estos archivos <br>
+						- Es posible utilizar el feed GTFS generado con la aplicacion OpenTripPlanner para generar la informacion de rutas de transporte publico informal en la ciudad de lpz. <br>
+						- Finalmente adaptando la informacion de un sistema de transporte informal al formato de la especificacion GTFS,
+							se observo que es posible desplegar una aplicacion TripPlanner para generar la informacion de rutas en un sistema de transporte informal.
 					</aside>
 				</section>
 				
 				<section>
 					<h3 align="justify">6. Recomendaciones</h3>
 					<ul>
-						<li align="justify">Ampliar la cobertura de rutas de transporte del caso de estudio.</li>
-						<li align="justify">Utilizar el estandar GTFS en mas ciudades.</li>
-						<li align="justify">Reutilización de coordenadas.</li>
+						<li align="justify">Ampliar la cobertura de rutas de transporte del caso de estudio</li>
+						<li align="justify">Adoptar el estandar GTFS para la representacion de la informacion</li>
+						<!-- <li align="justify">Reutilización de coordenadas.</li> -->
 						<li align="justify">GTFS-flex</li>
 					</ul>
 
 					<aside class="notes" style="font-size: small;">
-						- Para incrementar la cantidad de resultados generados por la apicacion trip planner se recomienda mapear mas rutas de transporte informal.
-						- Se recomienda replicar los resultados de la presente investigacion en ciudades con sistemas de transporte similares al de la ciudad de lpz.
-						- Actualmente cada ruta define su propia secuencia de coordenadas, se recomienda estudiar la implementación de un algoritmo para compartir estas coordenadas
-							entre multiples rutas. De esta forma se optimizaria el tamaño del feed GTFS generado.
-						- La especificacion derivada GTFS-flex, desarollada para dar soporte a las multiples variaciones de sistemas de transporte informal que existen en el mundo.
+						- Para incrementar la cantidad de resultados generados por la aplicacion trip planner se recomienda mapear mas rutas de transporte informal.
+						- Se recomienda estudiar la adopcion del estandar GTFS en sistemas de transporte similiares al de la ciudad de lpz, tomando como referencia los resultados obtenidos por la investigacion.
+						- La especificacion derivada GTFS-flex tiene el objetivo dar soporte a las multiples variaciones de sistemas de transporte informal que existen en el mundo.
 							Aunque aun esta en fase de pruebas, seria interezante empezar a estudiar su implementacion en nuestro sistema de transporte.
 					</aside>
 				</section>
@@ -417,7 +420,6 @@ que se centra principalmente en las fases de diseño y construcción del prototi
 				<section>
 					Gracias por su atención.
 				</section>
-
 			</div>
 		</div>
 
